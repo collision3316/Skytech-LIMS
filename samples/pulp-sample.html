@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SLIMS - SAMPLES</title>
+    <link rel="stylesheet" type="text/css" href="../res/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="icon" href="res/img/favicon.ico">
+</head>
+<body>
+    <div class="w3-bar w3-border-bottom w3-center" style="font-weight: bold">
+      <a href="samples.php" class="w3-button w3-left" style="background-color:#9b1d20; color:goldenrod;">BACK</a><h1><img src="../res/img/droplet.svg" height="50px"> SAMPLE CAPTURE <img src="../res/img/droplet.svg" height="50px"></h1>
+      </div>
+    <br/>
+  <form class="w3-form w3-center" action="add_sample.php" method="POST">
+        <!--Sample Information-->
+        <fieldset>
+            <legend>Sample Details:</legend>
+            <label>Sample Type: </label>
+            <select id="sampleType" name="sampleType">
+                <option value="Pulp">Pulp</option>
+            </select>
+            <br>
+            <label>Test Name: </label>
+            <input type="text" placeholder="Test Name" name="testName" required/>
+            <br>
+            <label>Description: </label>
+            <input type="text" placeholder="Description of the test" name="testDescription" required/>
+            <br>
+        </fieldset>
+        <!--Sample Location-->
+        <fieldset>
+            <legend>Sample Location</legend>
+            <label>Room No:</label>
+            <select id="room" name="room">
+                <option value="R1">Room 1</option>
+                <option value="R2">Room 2</option>
+                <option value="R3">Room 3</option>
+                <option value="R4">Room 4</option>
+            </select>
+            <br>
+            <label>Shelf No:</label>
+            <input type="text" placeholder="S1" name="shelf" required>
+        </fieldset>
+        <br>
+        <!--Sampler Information-->
+        <fieldset>
+            <legend>Tester In Charge</legend>
+            <label>Tester: </label>
+            <input type="text" placeholder="Emmanuel Kennedi" name="testInCharge" required/>
+            <br>
+            <label>Phone: </label>
+            <input type="text" placeholder="+263786173865" name="contact" required/>
+            <br/> <br/>
+        </fieldset>
+
+        <!--Customer Information-->
+        <fieldset>
+            <legend>Customer Details</legend>
+            <label>Name: </label>
+            <input type="text" placeholder="Daizy" name="cname" required/>
+            <label>Surname: </label>
+            <input type="text" placeholder="Nyoni" name="csurname" required/>
+            <br>
+            <label>Gender: </label>
+            <input type="text" placeholder="Female" name="cgender" required/>
+            <label>Cell: </label>
+            <input type="text" placeholder="+263772647577" name="ccell" required/>
+            <br>
+            <label>Company: </label>
+            <input type="text" placeholder="DNG Mining" name="ccompany" required/>
+            <br/> <br/>
+        </fieldset>
+
+        <!--Submit Form-->
+        <input type="submit" value="CAPTURE" name="register"/>
+
+  </form>
+</body>
