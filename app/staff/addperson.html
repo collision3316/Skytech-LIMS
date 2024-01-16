@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SLIMS - SAMPLES</title>
+    <link rel="stylesheet" type="text/css" href="../res/css/w3.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="icon" href="res/img/favicon.ico">
+</head>
+<body>
+    <div class="w3-bar w3-border-bottom w3-center" style="font-weight: bold; background-color: #df1c08; color: white;">
+      <a href="person.php" class="w3-button w3-left" style="background-color:#000000; color:#df1c08;">BACK</a><h1><span style="color: #df1c08; background-color: #000000;">PERSONNEL</h1>
+      </div>
+    <br/>
+  <form class="w3-form w3-center" action="add_person.php" method="POST">
+        <!--Personal-->
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <label>First Name: </label>
+            <input type="text" placeholder="Emmanuel" name="fname"/>
+            <br>
+            <label>Last Name: </label>
+            <input type="text" placeholder="Kennedi" name="lname"/>
+            <br>
+            <label>Position: </label>
+            <input type="text" placeholder="Software Engineer" name="position"/>
+            <br>
+        </fieldset>
+        <!--Contact-->
+        <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email:</label>
+            <input type="text" placeholder="kennediemmanuel@gmail.com" name="email">
+            <br>
+            <label>Cell:</label>
+            <input type="text" placeholder="+263786173865" name="cell">
+            <br>
+            <label>Address: </label>
+            <input type="text" placeholder="00 Aaaaa, Aa" name="address"/>
+        </fieldset>
+        <br>
+        <!--Submit Form-->
+        <input type="submit" value="CAPTURE" name="register" style="background-color: #000000; color: #df1c08;"/>
+
+  </form>
+</body>
